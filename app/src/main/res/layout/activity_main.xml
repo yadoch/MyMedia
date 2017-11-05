@@ -27,20 +27,30 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="System"
             android:onClick="test0"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="+"
             android:onClick="test1"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="-"
             android:onClick="test2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Page2"
+            android:onClick="test3"
             />
     </LinearLayout>
     <SeekBar

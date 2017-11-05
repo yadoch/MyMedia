@@ -12,13 +12,23 @@ public class MediaGBService extends Service {
 
     public class LocalBinder extends Binder{
         MediaGBService getService (){
-            return MIDI_SERVICE.this;
+            return MediaGBService.this;
         }
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
+
         return mBinder;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 }
